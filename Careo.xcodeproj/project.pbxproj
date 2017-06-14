@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13445E88554F71A4169C5C0B /* Pods_CareoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15615A9C42A1D662091DED13 /* Pods_CareoUITests.framework */; };
+		D8C2E11962916A1AEFE4708D /* Pods_CareoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173032D0C77DFEBA56EC851F /* Pods_CareoTests.framework */; };
+		F9950E141EF1531600B29426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E131EF1531600B29426 /* AppDelegate.swift */; };
+		F9950E161EF1531600B29426 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E151EF1531600B29426 /* CarListViewController.swift */; };
+		F9950E191EF1531600B29426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9950E171EF1531600B29426 /* Main.storyboard */; };
+		F9950E1B1EF1531600B29426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9950E1A1EF1531600B29426 /* Assets.xcassets */; };
+		F9950E1E1EF1531600B29426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9950E1C1EF1531600B29426 /* LaunchScreen.storyboard */; };
+		F9950E291EF1531700B29426 /* CareoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E281EF1531700B29426 /* CareoTests.swift */; };
+		F9950E341EF1531700B29426 /* CareoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E331EF1531700B29426 /* CareoUITests.swift */; };
+		FB108E39F4B3B41ADC3A2F12 /* Pods_Careo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1719A1D61B0F3C8A8D35DDF /* Pods_Careo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9950E251EF1531700B29426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9950E081EF1531600B29426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9950E0F1EF1531600B29426;
+			remoteInfo = Careo;
+		};
+		F9950E301EF1531700B29426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9950E081EF1531600B29426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9950E0F1EF1531600B29426;
+			remoteInfo = Careo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ED4B9F3719322905CDF58AE /* Pods-Careo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Careo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Careo/Pods-Careo.release.xcconfig"; sourceTree = "<group>"; };
+		15615A9C42A1D662091DED13 /* Pods_CareoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		173032D0C77DFEBA56EC851F /* Pods_CareoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7C2759FC4F67E92B9C351E /* Pods-Careo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Careo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Careo/Pods-Careo.debug.xcconfig"; sourceTree = "<group>"; };
+		52EB8C150CC803CEA7D138A1 /* Pods-CareoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareoTests/Pods-CareoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5564BF4B4EA6E83C4E97521F /* Pods-CareoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareoTests/Pods-CareoTests.release.xcconfig"; sourceTree = "<group>"; };
+		592CE0B16DCC48718BC2AE47 /* Pods-CareoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CareoUITests/Pods-CareoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1719A1D61B0F3C8A8D35DDF /* Pods_Careo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Careo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F563F5C9C5933F5DD9E658 /* Pods-CareoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CareoUITests/Pods-CareoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9950E101EF1531600B29426 /* Careo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Careo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9950E131EF1531600B29426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9950E151EF1531600B29426 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		F9950E181EF1531600B29426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9950E1A1EF1531600B29426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9950E1D1EF1531600B29426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9950E1F1EF1531600B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9950E241EF1531700B29426 /* CareoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9950E281EF1531700B29426 /* CareoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareoTests.swift; sourceTree = "<group>"; };
+		F9950E2A1EF1531700B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9950E2F1EF1531700B29426 /* CareoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9950E331EF1531700B29426 /* CareoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareoUITests.swift; sourceTree = "<group>"; };
+		F9950E351EF1531700B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9950E0D1EF1531600B29426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB108E39F4B3B41ADC3A2F12 /* Pods_Careo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9950E211EF1531700B29426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C2E11962916A1AEFE4708D /* Pods_CareoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9950E2C1EF1531700B29426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13445E88554F71A4169C5C0B /* Pods_CareoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FD19DBA09E5F96A0D8E0CDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1719A1D61B0F3C8A8D35DDF /* Pods_Careo.framework */,
+				173032D0C77DFEBA56EC851F /* Pods_CareoTests.framework */,
+				15615A9C42A1D662091DED13 /* Pods_CareoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A74C773B3D9903C341D1E21D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C2759FC4F67E92B9C351E /* Pods-Careo.debug.xcconfig */,
+				0ED4B9F3719322905CDF58AE /* Pods-Careo.release.xcconfig */,
+				52EB8C150CC803CEA7D138A1 /* Pods-CareoTests.debug.xcconfig */,
+				5564BF4B4EA6E83C4E97521F /* Pods-CareoTests.release.xcconfig */,
+				E7F563F5C9C5933F5DD9E658 /* Pods-CareoUITests.debug.xcconfig */,
+				592CE0B16DCC48718BC2AE47 /* Pods-CareoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9950E071EF1531600B29426 = {
+			isa = PBXGroup;
+			children = (
+				F9950E121EF1531600B29426 /* Careo */,
+				F9950E271EF1531700B29426 /* CareoTests */,
+				F9950E321EF1531700B29426 /* CareoUITests */,
+				F9950E111EF1531600B29426 /* Products */,
+				A74C773B3D9903C341D1E21D /* Pods */,
+				7FD19DBA09E5F96A0D8E0CDA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9950E111EF1531600B29426 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9950E101EF1531600B29426 /* Careo.app */,
+				F9950E241EF1531700B29426 /* CareoTests.xctest */,
+				F9950E2F1EF1531700B29426 /* CareoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9950E121EF1531600B29426 /* Careo */ = {
+			isa = PBXGroup;
+			children = (
+				F9950E131EF1531600B29426 /* AppDelegate.swift */,
+				F9950E171EF1531600B29426 /* Main.storyboard */,
+				F9950E421EF159A700B29426 /* CarList */,
+				F9950E431EF159B400B29426 /* CarDetails */,
+				F9950E441EF159C500B29426 /* CarForm */,
+				F9FFF6941EF15DA9001D4E95 /* Services */,
+				F9FFF6931EF15DA4001D4E95 /* Managers */,
+				F9FFF6921EF15D42001D4E95 /* Other */,
+			);
+			path = Careo;
+			sourceTree = "<group>";
+		};
+		F9950E271EF1531700B29426 /* CareoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9950E281EF1531700B29426 /* CareoTests.swift */,
+				F9950E2A1EF1531700B29426 /* Info.plist */,
+			);
+			path = CareoTests;
+			sourceTree = "<group>";
+		};
+		F9950E321EF1531700B29426 /* CareoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9950E331EF1531700B29426 /* CareoUITests.swift */,
+				F9950E351EF1531700B29426 /* Info.plist */,
+			);
+			path = CareoUITests;
+			sourceTree = "<group>";
+		};
+		F9950E421EF159A700B29426 /* CarList */ = {
+			isa = PBXGroup;
+			children = (
+				F9FFF6851EF15C59001D4E95 /* Model */,
+				F9FFF6861EF15C5F001D4E95 /* ViewControllers */,
+				F9FFF6881EF15C76001D4E95 /* ViewModel */,
+				F9FFF6871EF15C66001D4E95 /* Storyboards */,
+			);
+			name = CarList;
+			sourceTree = "<group>";
+		};
+		F9950E431EF159B400B29426 /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F9FFF68A1EF15CC3001D4E95 /* Model */,
+				F9FFF68B1EF15CC9001D4E95 /* ViewControllers */,
+				F9FFF68C1EF15CD7001D4E95 /* ViewModel */,
+				F9FFF68D1EF15CDF001D4E95 /* Storyboards */,
+			);
+			name = CarDetails;
+			sourceTree = "<group>";
+		};
+		F9950E441EF159C500B29426 /* CarForm */ = {
+			isa = PBXGroup;
+			children = (
+				F9FFF6911EF15D00001D4E95 /* Model */,
+				F9FFF68F1EF15CF3001D4E95 /* ViewControllers */,
+				F9FFF6901EF15CF9001D4E95 /* ViewModel */,
+				F9FFF68E1EF15CEB001D4E95 /* Storyboards */,
+			);
+			name = CarForm;
+			sourceTree = "<group>";
+		};
+		F9FFF6851EF15C59001D4E95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9FFF6861EF15C5F001D4E95 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9950E151EF1531600B29426 /* CarListViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9FFF6871EF15C66001D4E95 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F9FFF6881EF15C76001D4E95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9FFF68A1EF15CC3001D4E95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9FFF68B1EF15CC9001D4E95 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9FFF68C1EF15CD7001D4E95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9FFF68D1EF15CDF001D4E95 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F9FFF68E1EF15CEB001D4E95 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F9FFF68F1EF15CF3001D4E95 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9FFF6901EF15CF9001D4E95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9FFF6911EF15D00001D4E95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9FFF6921EF15D42001D4E95 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F9950E1C1EF1531600B29426 /* LaunchScreen.storyboard */,
+				F9950E1A1EF1531600B29426 /* Assets.xcassets */,
+				F9950E1F1EF1531600B29426 /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		F9FFF6931EF15DA4001D4E95 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		F9FFF6941EF15DA9001D4E95 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9950E0F1EF1531600B29426 /* Careo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9950E381EF1531700B29426 /* Build configuration list for PBXNativeTarget "Careo" */;
+			buildPhases = (
+				D30E380F414C1D2C52B74332 /* [CP] Check Pods Manifest.lock */,
+				F9950E0C1EF1531600B29426 /* Sources */,
+				F9950E0D1EF1531600B29426 /* Frameworks */,
+				F9950E0E1EF1531600B29426 /* Resources */,
+				2179BDF86EA3D64107211D72 /* [CP] Embed Pods Frameworks */,
+				60E9F870C3D37B2368A5D7E9 /* [CP] Copy Pods Resources */,
+				F9950E411EF1561F00B29426 /* Create Storyboard Constants */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Careo;
+			productName = Careo;
+			productReference = F9950E101EF1531600B29426 /* Careo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9950E231EF1531700B29426 /* CareoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9950E3B1EF1531700B29426 /* Build configuration list for PBXNativeTarget "CareoTests" */;
+			buildPhases = (
+				3ACD49A6F7147E17C6194213 /* [CP] Check Pods Manifest.lock */,
+				F9950E201EF1531700B29426 /* Sources */,
+				F9950E211EF1531700B29426 /* Frameworks */,
+				F9950E221EF1531700B29426 /* Resources */,
+				679C7047CB183BEDB28E8601 /* [CP] Embed Pods Frameworks */,
+				110A70BC497F7A57F8056408 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9950E261EF1531700B29426 /* PBXTargetDependency */,
+			);
+			name = CareoTests;
+			productName = CareoTests;
+			productReference = F9950E241EF1531700B29426 /* CareoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9950E2E1EF1531700B29426 /* CareoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9950E3E1EF1531700B29426 /* Build configuration list for PBXNativeTarget "CareoUITests" */;
+			buildPhases = (
+				B9C6D1F52CC962CED2DD65A1 /* [CP] Check Pods Manifest.lock */,
+				F9950E2B1EF1531700B29426 /* Sources */,
+				F9950E2C1EF1531700B29426 /* Frameworks */,
+				F9950E2D1EF1531700B29426 /* Resources */,
+				AEC1497D5A7D10F72BD5F289 /* [CP] Embed Pods Frameworks */,
+				000F79EF7BE6D8EE63523369 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9950E311EF1531700B29426 /* PBXTargetDependency */,
+			);
+			name = CareoUITests;
+			productName = CareoUITests;
+			productReference = F9950E2F1EF1531700B29426 /* CareoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9950E081EF1531600B29426 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = carlst;
+				TargetAttributes = {
+					F9950E0F1EF1531600B29426 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+					};
+					F9950E231EF1531700B29426 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9950E0F1EF1531600B29426;
+					};
+					F9950E2E1EF1531700B29426 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K93H863522;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9950E0F1EF1531600B29426;
+					};
+				};
+			};
+			buildConfigurationList = F9950E0B1EF1531600B29426 /* Build configuration list for PBXProject "Careo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9950E071EF1531600B29426;
+			productRefGroup = F9950E111EF1531600B29426 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9950E0F1EF1531600B29426 /* Careo */,
+				F9950E231EF1531700B29426 /* CareoTests */,
+				F9950E2E1EF1531700B29426 /* CareoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9950E0E1EF1531600B29426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9950E1E1EF1531600B29426 /* LaunchScreen.storyboard in Resources */,
+				F9950E1B1EF1531600B29426 /* Assets.xcassets in Resources */,
+				F9950E191EF1531600B29426 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9950E221EF1531700B29426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9950E2D1EF1531700B29426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		000F79EF7BE6D8EE63523369 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareoUITests/Pods-CareoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		110A70BC497F7A57F8056408 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareoTests/Pods-CareoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2179BDF86EA3D64107211D72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Careo/Pods-Careo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ACD49A6F7147E17C6194213 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60E9F870C3D37B2368A5D7E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Careo/Pods-Careo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		679C7047CB183BEDB28E8601 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareoTests/Pods-CareoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEC1497D5A7D10F72BD5F289 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CareoUITests/Pods-CareoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C6D1F52CC962CED2DD65A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D30E380F414C1D2C52B74332 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9950E411EF1561F00B29426 /* Create Storyboard Constants */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Storyboard Constants";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo $(bash -l -c  \"source ~/.bash_profile && cd Careo && bundle exec sbconstants -w /Other/UIConstants.swift\")";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9950E0C1EF1531600B29426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9950E161EF1531600B29426 /* CarListViewController.swift in Sources */,
+				F9950E141EF1531600B29426 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9950E201EF1531700B29426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9950E291EF1531700B29426 /* CareoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9950E2B1EF1531700B29426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9950E341EF1531700B29426 /* CareoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9950E261EF1531700B29426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9950E0F1EF1531600B29426 /* Careo */;
+			targetProxy = F9950E251EF1531700B29426 /* PBXContainerItemProxy */;
+		};
+		F9950E311EF1531700B29426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9950E0F1EF1531600B29426 /* Careo */;
+			targetProxy = F9950E301EF1531700B29426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9950E171EF1531600B29426 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9950E181EF1531600B29426 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9950E1C1EF1531600B29426 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9950E1D1EF1531600B29426 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9950E361EF1531700B29426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9950E371EF1531700B29426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9950E391EF1531700B29426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E7C2759FC4F67E92B9C351E /* Pods-Careo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = Careo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.Careo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F9950E3A1EF1531700B29426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED4B9F3719322905CDF58AE /* Pods-Careo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = Careo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.Careo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F9950E3C1EF1531700B29426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52EB8C150CC803CEA7D138A1 /* Pods-CareoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = CareoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.CareoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Careo.app/Careo";
+			};
+			name = Debug;
+		};
+		F9950E3D1EF1531700B29426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5564BF4B4EA6E83C4E97521F /* Pods-CareoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = CareoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.CareoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Careo.app/Careo";
+			};
+			name = Release;
+		};
+		F9950E3F1EF1531700B29426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F563F5C9C5933F5DD9E658 /* Pods-CareoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = CareoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.CareoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Careo;
+			};
+			name = Debug;
+		};
+		F9950E401EF1531700B29426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592CE0B16DCC48718BC2AE47 /* Pods-CareoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K93H863522;
+				INFOPLIST_FILE = CareoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlst.CareoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Careo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9950E0B1EF1531600B29426 /* Build configuration list for PBXProject "Careo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9950E361EF1531700B29426 /* Debug */,
+				F9950E371EF1531700B29426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9950E381EF1531700B29426 /* Build configuration list for PBXNativeTarget "Careo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9950E391EF1531700B29426 /* Debug */,
+				F9950E3A1EF1531700B29426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9950E3B1EF1531700B29426 /* Build configuration list for PBXNativeTarget "CareoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9950E3C1EF1531700B29426 /* Debug */,
+				F9950E3D1EF1531700B29426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9950E3E1EF1531700B29426 /* Build configuration list for PBXNativeTarget "CareoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9950E3F1EF1531700B29426 /* Debug */,
+				F9950E401EF1531700B29426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9950E081EF1531600B29426 /* Project object */;
+}
