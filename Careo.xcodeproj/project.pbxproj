@@ -11,11 +11,15 @@
 		D8C2E11962916A1AEFE4708D /* Pods_CareoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173032D0C77DFEBA56EC851F /* Pods_CareoTests.framework */; };
 		F9950E141EF1531600B29426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E131EF1531600B29426 /* AppDelegate.swift */; };
 		F9950E161EF1531600B29426 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E151EF1531600B29426 /* CarListViewController.swift */; };
-		F9950E191EF1531600B29426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9950E171EF1531600B29426 /* Main.storyboard */; };
 		F9950E1B1EF1531600B29426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9950E1A1EF1531600B29426 /* Assets.xcassets */; };
 		F9950E1E1EF1531600B29426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9950E1C1EF1531600B29426 /* LaunchScreen.storyboard */; };
 		F9950E291EF1531700B29426 /* CareoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E281EF1531700B29426 /* CareoTests.swift */; };
 		F9950E341EF1531700B29426 /* CareoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E331EF1531700B29426 /* CareoUITests.swift */; };
+		F9FFF6961EF15EFE001D4E95 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FFF6951EF15EFE001D4E95 /* PersistenceManager.swift */; };
+		F9FFF6981EF16486001D4E95 /* CarList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FFF6971EF16486001D4E95 /* CarList.storyboard */; };
+		F9FFF69A1EF16D36001D4E95 /* CarDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FFF6991EF16D36001D4E95 /* CarDetails.storyboard */; };
+		F9FFF69C1EF16D4D001D4E95 /* CarForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FFF69B1EF16D4D001D4E95 /* CarForm.storyboard */; };
+		F9FFF69E1EF16DBE001D4E95 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FFF69D1EF16DBE001D4E95 /* UIConstants.swift */; };
 		FB108E39F4B3B41ADC3A2F12 /* Pods_Careo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1719A1D61B0F3C8A8D35DDF /* Pods_Careo.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +53,6 @@
 		F9950E101EF1531600B29426 /* Careo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Careo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9950E131EF1531600B29426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9950E151EF1531600B29426 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
-		F9950E181EF1531600B29426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9950E1A1EF1531600B29426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9950E1D1EF1531600B29426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9950E1F1EF1531600B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +62,11 @@
 		F9950E2F1EF1531700B29426 /* CareoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9950E331EF1531700B29426 /* CareoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareoUITests.swift; sourceTree = "<group>"; };
 		F9950E351EF1531700B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FFF6951EF15EFE001D4E95 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
+		F9FFF6971EF16486001D4E95 /* CarList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CarList.storyboard; path = CarList/CarList.storyboard; sourceTree = "<group>"; };
+		F9FFF6991EF16D36001D4E95 /* CarDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CarDetails.storyboard; path = CarDetails/CarDetails.storyboard; sourceTree = "<group>"; };
+		F9FFF69B1EF16D4D001D4E95 /* CarForm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CarForm.storyboard; path = CarForm/CarForm.storyboard; sourceTree = "<group>"; };
+		F9FFF69D1EF16DBE001D4E95 /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIConstants.swift; path = Other/UIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				F9950E131EF1531600B29426 /* AppDelegate.swift */,
-				F9950E171EF1531600B29426 /* Main.storyboard */,
 				F9950E421EF159A700B29426 /* CarList */,
 				F9950E431EF159B400B29426 /* CarDetails */,
 				F9950E441EF159C500B29426 /* CarForm */,
@@ -218,6 +225,7 @@
 		F9FFF6871EF15C66001D4E95 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				F9FFF6971EF16486001D4E95 /* CarList.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -253,6 +261,7 @@
 		F9FFF68D1EF15CDF001D4E95 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				F9FFF6991EF16D36001D4E95 /* CarDetails.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -260,6 +269,7 @@
 		F9FFF68E1EF15CEB001D4E95 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				F9FFF69B1EF16D4D001D4E95 /* CarForm.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -288,6 +298,7 @@
 		F9FFF6921EF15D42001D4E95 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F9FFF69D1EF16DBE001D4E95 /* UIConstants.swift */,
 				F9950E1C1EF1531600B29426 /* LaunchScreen.storyboard */,
 				F9950E1A1EF1531600B29426 /* Assets.xcassets */,
 				F9950E1F1EF1531600B29426 /* Info.plist */,
@@ -298,6 +309,7 @@
 		F9FFF6931EF15DA4001D4E95 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				F9FFF6951EF15EFE001D4E95 /* PersistenceManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -429,9 +441,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FFF69A1EF16D36001D4E95 /* CarDetails.storyboard in Resources */,
 				F9950E1E1EF1531600B29426 /* LaunchScreen.storyboard in Resources */,
 				F9950E1B1EF1531600B29426 /* Assets.xcassets in Resources */,
-				F9950E191EF1531600B29426 /* Main.storyboard in Resources */,
+				F9FFF6981EF16486001D4E95 /* CarList.storyboard in Resources */,
+				F9FFF69C1EF16D4D001D4E95 /* CarForm.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,7 +613,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo $(bash -l -c  \"source ~/.bash_profile && cd Careo && bundle exec sbconstants -w /Other/UIConstants.swift\")";
+			shellScript = "echo $(bash -l -c  \"source ~/.bash_profile && cd Careo && bundle exec sbconstants -w Other/UIConstants.swift\")";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -608,8 +622,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FFF6961EF15EFE001D4E95 /* PersistenceManager.swift in Sources */,
 				F9950E161EF1531600B29426 /* CarListViewController.swift in Sources */,
 				F9950E141EF1531600B29426 /* AppDelegate.swift in Sources */,
+				F9FFF69E1EF16DBE001D4E95 /* UIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,14 +661,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F9950E171EF1531600B29426 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9950E181EF1531600B29426 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F9950E1C1EF1531600B29426 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
