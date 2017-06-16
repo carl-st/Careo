@@ -6,3 +6,7 @@ public enum StoryboardNames : String {
     case CarList
     case LaunchScreen
 }
+
+public enum TableViewCellReuseIdentifier : String {
+    case CarListTableViewCell
+}

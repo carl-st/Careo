@@ -12,7 +12,7 @@
         <!--CarListViewController-->
         <scene sceneID="PlZ-Bh-YoV">
             <objects>
-                <viewController title="CarListViewController" id="06s-UW-N3b" sceneMemberID="viewController">
+                <viewController title="CarListViewController" id="06s-UW-N3b" customClass="CarListViewController" customModule="Careo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="osq-yd-Tj5"/>
                         <viewControllerLayoutGuide type="bottom" id="R20-wj-hfc"/>
@@ -21,9 +21,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P5D-UK-f88">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P5D-UK-f88">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarListTableViewCell" id="25W-1G-NJw" customClass="CarListTableViewCell" customModule="Careo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="25W-1G-NJw" id="jRU-dO-gMK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xM4-OK-grP">
+                                                    <rect key="frame" x="8" y="8" width="359" height="34.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34.5" id="IJV-6S-Sp3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GillSans-Italic" family="Gill Sans" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-Cd-bBU">
+                                                    <rect key="frame" x="8" y="50.5" width="48.5" height="26.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26.5" id="6hb-W6-K1U"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GillSans-LightItalic" family="Gill Sans" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jN-HW-WSd">
+                                                    <rect key="frame" x="8" y="85" width="52" height="26.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="26.5" id="NtG-Eo-6cQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GillSans-LightItalic" family="Gill Sans" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9c-PH-b7S">
+                                                    <rect key="frame" x="331.5" y="50.5" width="35.5" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="M29-ws-yEM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GillSans-LightItalic" family="Gill Sans" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="d9c-PH-b7S" firstAttribute="top" secondItem="xM4-OK-grP" secondAttribute="bottom" constant="8" id="3CN-lM-LUf"/>
+                                                <constraint firstItem="xM4-OK-grP" firstAttribute="top" secondItem="jRU-dO-gMK" secondAttribute="top" constant="8" id="64y-ve-X5B"/>
+                                                <constraint firstItem="v9J-Cd-bBU" firstAttribute="top" secondItem="xM4-OK-grP" secondAttribute="bottom" constant="8" id="6E9-ww-Gwe"/>
+                                                <constraint firstAttribute="trailing" secondItem="d9c-PH-b7S" secondAttribute="trailing" constant="8" id="Cbh-ZT-8kh"/>
+                                                <constraint firstItem="xM4-OK-grP" firstAttribute="leading" secondItem="jRU-dO-gMK" secondAttribute="leading" constant="8" id="FjY-Pb-lUo"/>
+                                                <constraint firstItem="1jN-HW-WSd" firstAttribute="leading" secondItem="jRU-dO-gMK" secondAttribute="leading" constant="8" id="SvO-1U-zwZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="xM4-OK-grP" secondAttribute="trailing" constant="8" id="e2X-R2-dl7"/>
+                                                <constraint firstItem="1jN-HW-WSd" firstAttribute="top" secondItem="v9J-Cd-bBU" secondAttribute="bottom" constant="8" id="hau-Em-WMx"/>
+                                                <constraint firstItem="v9J-Cd-bBU" firstAttribute="leading" secondItem="jRU-dO-gMK" secondAttribute="leading" constant="8" id="vc2-Df-Cyd"/>
+                                                <constraint firstAttribute="bottom" secondItem="1jN-HW-WSd" secondAttribute="bottom" constant="8" id="vdG-qu-4Qd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="brandLabel" destination="v9J-Cd-bBU" id="aR4-Ju-yZM"/>
+                                            <outlet property="modelLabel" destination="1jN-HW-WSd" id="dm0-ju-Opw"/>
+                                            <outlet property="nameLabel" destination="xM4-OK-grP" id="Ozh-p7-CnH"/>
+                                            <outlet property="yearLabel" destination="d9c-PH-b7S" id="xWE-gP-KhF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +101,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JIz-mN-Uwm"/>
+                    <connections>
+                        <outlet property="tableView" destination="P5D-UK-f88" id="pLE-J0-nfu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8j-Q1-T6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

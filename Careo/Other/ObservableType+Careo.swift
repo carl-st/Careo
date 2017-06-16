@@ -20,6 +20,7 @@ extension ObservableType {
     
     public func mapObject<T: Mappable>(type: T.Type) -> Observable<T> {
         return flatMap { data -> Observable<T> in
+            print(data)
             guard let json = data as? [String: Any] else {
                 throw mappingError
             }
@@ -33,10 +34,8 @@ extension ObservableType {
     
     public func mapArray<T: Mappable>(type: T.Type) -> Observable<[T]> {
         return flatMap { data -> Observable<[T]> in
-            guard let json = data as? [[String: Any]] else {
-                throw mappingError
-            }
-            guard let objects = Mapper<T>().mapArray(JSONArray: json) else {
+            let (_, json) = (data as? (HTTPURLResponse, Any))!
+            guard let objects = Mapper<T>().mapArray(JSONObject: json) else {
                 throw mappingError
             }
             

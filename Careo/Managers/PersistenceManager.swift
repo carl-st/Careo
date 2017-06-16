@@ -52,6 +52,9 @@ class PersistenceManager {
             realm.add(array, update: true)
         }
     }
-
+    
+    func cars() -> Results<Car> {
+        return realm.objects(Car.self)
+    }
 }
 

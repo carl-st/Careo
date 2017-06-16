@@ -17,6 +17,7 @@ target 'Careo' do
   pod 'RxCocoa'
   pod 'RxRealm'
   pod 'RxAlamofire'
+  pod "RxRealmDataSources"
   pod 'SIAlertView'
   pod 'NVActivityIndicatorView'
 

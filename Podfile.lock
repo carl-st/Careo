@@ -1,14 +1,14 @@
 PODS:
-  - Alamofire (4.2.0)
+  - Alamofire (4.4.0)
   - AlamofireImage (3.2.0):
     - Alamofire (~> 4.1)
   - AlamofireNetworkActivityIndicator (2.1.0):
     - Alamofire (~> 4.1)
-  - AlamofireObjectMapper (4.0.0):
-    - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
-  - NVActivityIndicatorView (3.0)
-  - ObjectMapper (2.2.1)
+  - NVActivityIndicatorView (3.6.1)
+  - ObjectMapper (2.2.7)
   - Realm (2.8.1):
     - Realm/Headers (= 2.8.1)
   - Realm/Headers (2.8.1)
@@ -19,14 +19,19 @@ PODS:
   - RxAlamofire/Core (3.0.2):
     - Alamofire (~> 4.0)
     - RxSwift (~> 3.0)
-  - RxCocoa (3.0.1):
-    - RxSwift (~> 3.0)
-  - RxRealm (0.3.2):
-    - RealmSwift (~> 2.0)
-    - RxSwift (~> 3.0.0)
-  - RxSwift (3.0.1)
+  - RxCocoa (3.5.0):
+    - RxSwift (~> 3.4)
+  - RxRealm (0.6.0):
+    - RealmSwift (~> 2.5)
+    - RxSwift (~> 3.2)
+  - RxRealmDataSources (0.2.1):
+    - RealmSwift (~> 2.1)
+    - RxCocoa (~> 3.1)
+    - RxRealm (~> 0.5)
+    - RxSwift (~> 3.1)
+  - RxSwift (3.5.0)
   - SIAlertView (1.3)
-  - TPKeyboardAvoiding (1.3)
+  - TPKeyboardAvoiding (1.3.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
@@ -39,6 +44,7 @@ DEPENDENCIES:
   - RxAlamofire
   - RxCocoa
   - RxRealm
+  - RxRealmDataSources
   - RxSwift
   - SIAlertView
   - TPKeyboardAvoiding (~> 1.3)
@@ -64,21 +70,22 @@ CHECKOUT OPTIONS:
     :submodules: true
 
 SPEC CHECKSUMS:
-  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   AlamofireNetworkActivityIndicator: 4716f6554bdfb9c7cf13b1e0e3af21163129690a
-  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
-  NVActivityIndicatorView: 81953b5e65093ba79edf4fe7268e002039ca5268
-  ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
+  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
   Realm: 2627602ad6818451f0cb8c2a6e072f7f10a5f360
   RealmSwift: c2b6404151219e3ec30aba4efbcfa8f05ff95c77
   RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
-  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
-  RxRealm: 42a12f1e62d6b54a8529fe0292d52c8e9f9b3267
-  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
+  RxRealm: 323de579b50b5e0f4a3e087d5925021f976ffaf1
+  RxRealmDataSources: 743901f35ef18533b2fc5d41a0f6b6b62b3c3304
+  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
   SIAlertView: 20c794b55eaf44d888773ea51647cf8907723919
-  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
 
-PODFILE CHECKSUM: 1546b6884706cab88b163ef8d4a472bd7b8d9109
+PODFILE CHECKSUM: dcfa3544e0848b2a0e44f59a940ec4fa2e333374
 
 COCOAPODS: 1.2.0
