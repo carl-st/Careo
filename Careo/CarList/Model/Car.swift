@@ -17,6 +17,14 @@ class Car: Object, Mappable {
     dynamic var brand = ""
     dynamic var year = ""
     
+    convenience init(name: String, model: String, brand: String, year: String) {
+        self.init()
+        self.name = name
+        self.model = model
+        self.brand = brand
+        self.year = year
+    }
+    
     override static func primaryKey() -> String? {
         return "id"
     }
@@ -26,7 +34,9 @@ class Car: Object, Mappable {
     }
     
     func mapping(map: Map) {
-        id <- map["_id"]
+        if map.mappingType == .fromJSON {
+            id <- map["_id"]
+        }
         name <- map["name"]
         model <- map["model"]
         brand <- map["brand"]

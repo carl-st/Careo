@@ -21,10 +21,8 @@ extension ObservableType {
     public func mapObject<T: Mappable>(type: T.Type) -> Observable<T> {
         return flatMap { data -> Observable<T> in
             print(data)
-            guard let json = data as? [String: Any] else {
-                throw mappingError
-            }
-            guard let object = Mapper<T>().map(JSON: json) else {
+            let (_, json) = (data as? (HTTPURLResponse, Any))!
+            guard let object = Mapper<T>().map(JSONObject: json) else {
                 throw mappingError
             }
             

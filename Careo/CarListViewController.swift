@@ -10,7 +10,7 @@ import UIKit
 import RxRealmDataSources
 import RxSwift
 
-class CarListViewController: UIViewController {
+class CarListViewController: UIViewController, CarFormDelegate {
     
     @IBOutlet var tableView: UITableView!
     var viewModel = CarListViewModel()
@@ -29,6 +29,16 @@ class CarListViewController: UIViewController {
         
     }
     
+    func formDidSaveEntry() {
+        print("did save entry")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SegueIdentifier.carFormSegue.rawValue {
+            let vc = segue.destination as? CarFormViewController
+            vc?.delegate = self
+        }
+    }
     
 
 }

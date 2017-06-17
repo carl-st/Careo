@@ -53,6 +53,19 @@ class PersistenceManager {
         }
     }
     
+    func createOrUpdateAndRemoveDeleted<T: Object>(_ array: [T]) {
+        createOrUpdate(array, realm: realm)
+        realm.beginWrite()
+        let oldIds: NSMutableArray = realm.objects(T.self).value(forKeyPath: "id") as! NSMutableArray
+        for object in array {
+            oldIds.remove(object.value(forKeyPath: "id")!)
+        }
+        let oldObjects = realm.objects(T.self).filter("id IN %@", oldIds)
+        print("Old objects: \(oldObjects)")
+        realm.delete(oldObjects)
+        try! realm.commitWrite()
+    }
+    
     func cars() -> Results<Car> {
         return realm.objects(Car.self)
     }

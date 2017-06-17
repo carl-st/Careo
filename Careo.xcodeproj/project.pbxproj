@@ -12,6 +12,7 @@
 		F9477B791EF2FB2400A8B92C /* ObservableType+Careo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9477B781EF2FB2400A8B92C /* ObservableType+Careo.swift */; };
 		F9477B7B1EF3043F00A8B92C /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9477B7A1EF3043F00A8B92C /* CarListViewModel.swift */; };
 		F9477B7F1EF3216700A8B92C /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9477B7E1EF3216700A8B92C /* CarListTableViewCell.swift */; };
+		F9477B811EF48C5100A8B92C /* CarFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9477B801EF48C5100A8B92C /* CarFormViewController.swift */; };
 		F9950E141EF1531600B29426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E131EF1531600B29426 /* AppDelegate.swift */; };
 		F9950E161EF1531600B29426 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E151EF1531600B29426 /* CarListViewController.swift */; };
 		F9950E1B1EF1531600B29426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9950E1A1EF1531600B29426 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		F9477B781EF2FB2400A8B92C /* ObservableType+Careo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ObservableType+Careo.swift"; path = "Other/ObservableType+Careo.swift"; sourceTree = "<group>"; };
 		F9477B7A1EF3043F00A8B92C /* CarListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarListViewModel.swift; path = CarList/ViewModel/CarListViewModel.swift; sourceTree = "<group>"; };
 		F9477B7E1EF3216700A8B92C /* CarListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarListTableViewCell.swift; path = CarList/Cells/CarListTableViewCell.swift; sourceTree = "<group>"; };
+		F9477B801EF48C5100A8B92C /* CarFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarFormViewController.swift; path = CarForm/ViewControllers/CarFormViewController.swift; sourceTree = "<group>"; };
 		F9950E101EF1531600B29426 /* Careo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Careo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9950E131EF1531600B29426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9950E151EF1531600B29426 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 		F9FFF68F1EF15CF3001D4E95 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F9477B801EF48C5100A8B92C /* CarFormViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				F9FFF6961EF15EFE001D4E95 /* PersistenceManager.swift in Sources */,
 				F9FFF6A41EF17388001D4E95 /* Service.swift in Sources */,
 				F9477B7F1EF3216700A8B92C /* CarListTableViewCell.swift in Sources */,
+				F9477B811EF48C5100A8B92C /* CarFormViewController.swift in Sources */,
 				F9FFF6A61EF174AB001D4E95 /* Car.swift in Sources */,
 				F9477B791EF2FB2400A8B92C /* ObservableType+Careo.swift in Sources */,
 				F9950E161EF1531600B29426 /* CarListViewController.swift in Sources */,

@@ -25,7 +25,7 @@ class CarsServices: Service {
             .subscribe(onNext: {
                 cars in
                 print(cars)
-                PersistenceManager.sharedInstance.createOrUpdate(cars)
+                PersistenceManager.sharedInstance.createOrUpdateAndRemoveDeleted(cars)
             }, onError: {
                 error in
                 print(error)
@@ -37,14 +37,15 @@ class CarsServices: Service {
             .addDisposableTo(bag)
     }
     
-    func addCar(car: Car) {
+    func addCar(car: Car, completion: @escaping () -> Void) {
         let parameters = Mapper().toJSON(car)
-        requestJSON(.post, Urls.baseUrl + "cars", parameters: parameters, headers: headers)
+        requestJSON(.post, Urls.baseUrl + "cars", parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .mapObject(type: Car.self)
             .subscribe(onNext: {
                 car in
                 print(car)
                 PersistenceManager.sharedInstance.createOrUpdate(car)
+                completion()
             }, onError: {
                 error in
                 print(error)
