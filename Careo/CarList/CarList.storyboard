@@ -23,7 +23,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P5D-UK-f88">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.85490196078431369" green="0.96862745098039216" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarListTableViewCell" rowHeight="93" id="25W-1G-NJw" customClass="CarListTableViewCell" customModule="Careo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="93"/>
@@ -84,6 +84,7 @@
                                                 <constraint firstItem="v9J-Cd-bBU" firstAttribute="leading" secondItem="jRU-dO-gMK" secondAttribute="leading" constant="8" id="vc2-Df-Cyd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.85490196080000003" green="0.96862745100000003" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="brandLabel" destination="v9J-Cd-bBU" id="aR4-Ju-yZM"/>
                                             <outlet property="modelLabel" destination="1jN-HW-WSd" id="dm0-ju-Opw"/>
@@ -111,6 +112,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="P5D-UK-f88" id="pLE-J0-nfu"/>
+                        <segue destination="svZ-px-Y8v" kind="show" identifier="carDetailsSegue" id="SVY-US-Pap"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8j-Q1-T6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,7 +125,15 @@
                 <viewControllerPlaceholder storyboardName="CarForm" id="Vex-B2-3jj" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiV-lg-9Ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="160"/>
+            <point key="canvasLocation" x="1802" y="39"/>
+        </scene>
+        <!--CarDetails-->
+        <scene sceneID="IwV-Vy-M5X">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CarDetails" id="svZ-px-Y8v" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUW-85-Y1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811" y="295"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PEU-Wi-iIe">

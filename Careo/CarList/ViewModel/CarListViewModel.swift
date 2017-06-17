@@ -12,11 +12,10 @@ import RealmSwift
 
 class CarListViewModel {
     
-//    var carsCollection: Observable<String>
     var carsCollection: Observable<(AnyRealmCollection<Car>, RealmChangeset?)>
+    var cars = PersistenceManager.sharedInstance.cars()
     
     init() {
-        let cars = PersistenceManager.sharedInstance.cars()
         carsCollection = Observable.changeset(from: cars)
             .share()
     }

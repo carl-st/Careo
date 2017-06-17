@@ -105,16 +105,21 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmD-zN-suf">
-                                        <rect key="frame" x="164" y="268" width="46" height="30"/>
+                                        <rect key="frame" x="147" y="268" width="80" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="Wa9-4K-Tzz"/>
+                                            <constraint firstAttribute="height" constant="35" id="WJQ-7u-agf"/>
+                                            <constraint firstAttribute="width" constant="80" id="Wa9-4K-Tzz"/>
                                         </constraints>
-                                        <state key="normal" title="Save"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="17"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="0.61960784313725492" green="0.89411764705882346" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="saveAction:" destination="wae-Ke-HlV" eventType="touchUpInside" id="JqC-ca-RTP"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.85490196080000003" green="0.96862745100000003" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="V5g-Ig-kW7" firstAttribute="width" secondItem="2cT-Xu-Bqh" secondAttribute="width" constant="-40" id="6NA-S6-c3x"/>
                                     <constraint firstItem="lmD-zN-suf" firstAttribute="top" secondItem="V5g-Ig-kW7" secondAttribute="bottom" constant="8" id="DEH-kM-CzQ"/>
@@ -126,7 +131,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85490196080000003" green="0.96862745100000003" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="g2p-5t-ENw" firstAttribute="top" secondItem="2cT-Xu-Bqh" secondAttribute="bottom" id="E1Y-0f-bHu"/>
                             <constraint firstAttribute="trailing" secondItem="2cT-Xu-Bqh" secondAttribute="trailing" id="YNT-l6-c7w"/>
@@ -141,6 +146,7 @@
                         <outlet property="brandTextField" destination="i6b-ae-by2" id="0mq-AM-s9J"/>
                         <outlet property="modelTextField" destination="8sg-EJ-L0C" id="I45-H5-7PY"/>
                         <outlet property="nameTextField" destination="CYP-LM-Vin" id="7oh-zn-UKS"/>
+                        <outlet property="saveButton" destination="lmD-zN-suf" id="7at-F4-ncj"/>
                         <outlet property="yearTextField" destination="SJT-J0-wlB" id="KnP-0v-l4w"/>
                     </connections>
                 </viewController>

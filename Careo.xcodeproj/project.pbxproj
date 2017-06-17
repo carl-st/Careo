@@ -19,6 +19,9 @@
 		F9950E1E1EF1531600B29426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9950E1C1EF1531600B29426 /* LaunchScreen.storyboard */; };
 		F9950E291EF1531700B29426 /* CareoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E281EF1531700B29426 /* CareoTests.swift */; };
 		F9950E341EF1531700B29426 /* CareoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E331EF1531700B29426 /* CareoUITests.swift */; };
+		F9B446311EF5486600A6AEDF /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B446301EF5486600A6AEDF /* CarDetailsViewController.swift */; };
+		F9B446331EF549A700A6AEDF /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B446321EF549A700A6AEDF /* Appearance.swift */; };
+		F9B446351EF551AC00A6AEDF /* CarDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B446341EF551AC00A6AEDF /* CarDetailsViewModel.swift */; };
 		F9FFF6961EF15EFE001D4E95 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FFF6951EF15EFE001D4E95 /* PersistenceManager.swift */; };
 		F9FFF6981EF16486001D4E95 /* CarList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FFF6971EF16486001D4E95 /* CarList.storyboard */; };
 		F9FFF69A1EF16D36001D4E95 /* CarDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FFF6991EF16D36001D4E95 /* CarDetails.storyboard */; };
@@ -74,6 +77,9 @@
 		F9950E2F1EF1531700B29426 /* CareoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9950E331EF1531700B29426 /* CareoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareoUITests.swift; sourceTree = "<group>"; };
 		F9950E351EF1531700B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B446301EF5486600A6AEDF /* CarDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarDetailsViewController.swift; path = CarDetails/ViewControllers/CarDetailsViewController.swift; sourceTree = "<group>"; };
+		F9B446321EF549A700A6AEDF /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appearance.swift; path = Other/Appearance.swift; sourceTree = "<group>"; };
+		F9B446341EF551AC00A6AEDF /* CarDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarDetailsViewModel.swift; path = CarDetails/ViewModel/CarDetailsViewModel.swift; sourceTree = "<group>"; };
 		F9FFF6951EF15EFE001D4E95 /* PersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersistenceManager.swift; path = Managers/PersistenceManager.swift; sourceTree = "<group>"; };
 		F9FFF6971EF16486001D4E95 /* CarList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CarList.storyboard; path = CarList/CarList.storyboard; sourceTree = "<group>"; };
 		F9FFF6991EF16D36001D4E95 /* CarDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CarDetails.storyboard; path = CarDetails/CarDetails.storyboard; sourceTree = "<group>"; };
@@ -274,6 +280,7 @@
 		F9FFF68B1EF15CC9001D4E95 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F9B446301EF5486600A6AEDF /* CarDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -281,6 +288,7 @@
 		F9FFF68C1EF15CD7001D4E95 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F9B446341EF551AC00A6AEDF /* CarDetailsViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -332,6 +340,7 @@
 				F9950E1F1EF1531600B29426 /* Info.plist */,
 				F9FFF6A11EF1722B001D4E95 /* GlobalConstants.swift */,
 				F9477B781EF2FB2400A8B92C /* ObservableType+Careo.swift */,
+				F9B446321EF549A700A6AEDF /* Appearance.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -656,6 +665,7 @@
 			files = (
 				F9FFF6961EF15EFE001D4E95 /* PersistenceManager.swift in Sources */,
 				F9FFF6A41EF17388001D4E95 /* Service.swift in Sources */,
+				F9B446311EF5486600A6AEDF /* CarDetailsViewController.swift in Sources */,
 				F9477B7F1EF3216700A8B92C /* CarListTableViewCell.swift in Sources */,
 				F9477B811EF48C5100A8B92C /* CarFormViewController.swift in Sources */,
 				F9FFF6A61EF174AB001D4E95 /* Car.swift in Sources */,
@@ -663,7 +673,9 @@
 				F9950E161EF1531600B29426 /* CarListViewController.swift in Sources */,
 				F9477B7B1EF3043F00A8B92C /* CarListViewModel.swift in Sources */,
 				F9950E141EF1531600B29426 /* AppDelegate.swift in Sources */,
+				F9B446351EF551AC00A6AEDF /* CarDetailsViewModel.swift in Sources */,
 				F9FFF69E1EF16DBE001D4E95 /* UIConstants.swift in Sources */,
+				F9B446331EF549A700A6AEDF /* Appearance.swift in Sources */,
 				F9FFF6A21EF1722B001D4E95 /* GlobalConstants.swift in Sources */,
 				F9FFF6A01EF1701D001D4E95 /* CarsServices.swift in Sources */,
 			);

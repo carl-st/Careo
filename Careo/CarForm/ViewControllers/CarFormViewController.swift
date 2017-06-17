@@ -21,11 +21,14 @@ class CarFormViewController: UIViewController {
     @IBOutlet var modelTextField: UITextField!
     @IBOutlet var brandTextField: UITextField!
     @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var saveButton: UIButton!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        saveButton.backgroundColor = Colors.primary
+        saveButton.layer.cornerRadius = 4
+        saveButton.clipsToBounds = true
     }
 
     @IBAction func saveAction(_ sender: Any) {

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Car Details-->
         <scene sceneID="Zip-ZX-AzK">
             <objects>
-                <viewController id="6OO-tX-E7C" sceneMemberID="viewController">
+                <viewController title="Car Details" id="6OO-tX-E7C" customClass="CarDetailsViewController" customModule="Careo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9eO-OV-Rks"/>
                         <viewControllerLayoutGuide type="bottom" id="b1f-st-WZ6"/>
@@ -20,8 +20,66 @@
                     <view key="view" contentMode="scaleToFill" id="d7T-th-Ei0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QL-YQ-48X">
+                                <rect key="frame" x="20" y="40" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3xX-BH-Yob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3Y-1f-URX">
+                                <rect key="frame" x="20" y="88" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lFH-At-hR6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx1-1V-aGp">
+                                <rect key="frame" x="20" y="126" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jxP-0z-6Bd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svm-VK-8gs">
+                                <rect key="frame" x="20" y="164" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="woA-oe-WjL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85490196080000003" green="0.96862745100000003" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5QL-YQ-48X" secondAttribute="trailing" constant="20" id="1RG-zC-uXM"/>
+                            <constraint firstItem="Wx1-1V-aGp" firstAttribute="leading" secondItem="d7T-th-Ei0" secondAttribute="leading" constant="20" id="3dK-S4-Fvn"/>
+                            <constraint firstItem="n3Y-1f-URX" firstAttribute="top" secondItem="5QL-YQ-48X" secondAttribute="bottom" constant="8" id="5J0-CI-UAr"/>
+                            <constraint firstItem="5QL-YQ-48X" firstAttribute="top" secondItem="9eO-OV-Rks" secondAttribute="bottom" constant="20" id="5tl-0j-FKo"/>
+                            <constraint firstAttribute="trailing" secondItem="Svm-VK-8gs" secondAttribute="trailing" constant="20" id="DY0-ar-Qcf"/>
+                            <constraint firstAttribute="trailing" secondItem="Wx1-1V-aGp" secondAttribute="trailing" constant="20" id="KHw-s7-69h"/>
+                            <constraint firstAttribute="trailing" secondItem="n3Y-1f-URX" secondAttribute="trailing" constant="20" id="N9A-o4-XoE"/>
+                            <constraint firstItem="n3Y-1f-URX" firstAttribute="leading" secondItem="d7T-th-Ei0" secondAttribute="leading" constant="20" id="RDO-pt-Yav"/>
+                            <constraint firstItem="Svm-VK-8gs" firstAttribute="top" secondItem="Wx1-1V-aGp" secondAttribute="bottom" constant="8" id="SOM-2Z-qT2"/>
+                            <constraint firstItem="Svm-VK-8gs" firstAttribute="leading" secondItem="d7T-th-Ei0" secondAttribute="leading" constant="20" id="jEf-hN-mev"/>
+                            <constraint firstItem="5QL-YQ-48X" firstAttribute="leading" secondItem="d7T-th-Ei0" secondAttribute="leading" constant="20" id="rGc-Xg-OW8"/>
+                            <constraint firstItem="Wx1-1V-aGp" firstAttribute="top" secondItem="n3Y-1f-URX" secondAttribute="bottom" constant="8" id="v1y-tm-R2T"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="brandLabel" destination="n3Y-1f-URX" id="hRk-Cg-nxF"/>
+                        <outlet property="modelLabel" destination="Wx1-1V-aGp" id="aE6-sZ-Ksy"/>
+                        <outlet property="nameLabel" destination="5QL-YQ-48X" id="k6p-GP-erF"/>
+                        <outlet property="yearLabel" destination="Svm-VK-8gs" id="Tnd-s4-OYj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KjK-pz-OvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
