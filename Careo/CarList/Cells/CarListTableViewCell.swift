@@ -21,9 +21,7 @@ class CarListTableViewCell: UITableViewCell {
     
     func config(withCar car: Car){
         nameLabel.text = "\(car.name)"
-        brandLabel.text = "\(car.brand)"
         modelLabel.text = "\(car.model)"
-        yearLabel.text = "\(car.year)"
     }
 
 }
