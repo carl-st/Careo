@@ -1,0 +1,4 @@
+os: osx
+language: objective-c
+xcode_workspace: Careo.xcodeworkspace
+xcode_scheme: Careo
