@@ -10,10 +10,10 @@ import UIKit
 
 class CarDetailsViewController: UIViewController {
     
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var brandLabel: UILabel!
-    @IBOutlet var modelLabel: UILabel!
-    @IBOutlet var yearLabel: UILabel!
+    @IBOutlet private var nameLabel: UILabel!
+    @IBOutlet private var brandLabel: UILabel!
+    @IBOutlet private var modelLabel: UILabel!
+    @IBOutlet private var yearLabel: UILabel!
     var viewModel: CarDetailsViewModel?
 
     override func viewDidLoad() {

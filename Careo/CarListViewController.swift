@@ -14,9 +14,9 @@ import RxCocoa
 class CarListViewController: UIViewController, CarFormDelegate {
     
     @IBOutlet var tableView: UITableView!
-    var viewModel = CarListViewModel()
-    var selectedCar = Car()
-    let bag = DisposeBag()
+    private var viewModel = CarListViewModel()
+    private var selectedCar = Car()
+    private let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,7 @@ class CarListViewController: UIViewController, CarFormDelegate {
     }
     
     func formDidSaveEntry() {
-        print("did save entry")
+        AlertView(title: "Success!", message: "A new car has been added to your list.", cancelButtonTitle: "Okay").show()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
