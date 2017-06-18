@@ -1,4 +1,4 @@
-# Careo
+# Careo [![Build Status](https://travis-ci.org/carl-st/Careo.svg?branch=master)](https://travis-ci.org/carl-st/Careo)
 Example of an iOS app made with RxSwift
 
 ## Initial Setup ##
