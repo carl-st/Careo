@@ -9,28 +9,55 @@
 import XCTest
 
 class CareoUITests: XCTestCase {
-        
+    
+    var app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app.launch()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testFlow() {
+        let carsNavigationBar = app.navigationBars["Cars"]
+        XCTAssert(carsNavigationBar.exists)
+
+        carsNavigationBar.buttons["Add"].tap()
+        
+        let addNavigationBar = app.navigationBars["Add Car"]
+        XCTAssert(addNavigationBar.exists)
+    }
+    
+    func testAdding() {
+        XCUIApplication().navigationBars["Cars"].buttons["Add"].tap()
+        
+        let elementsQuery = app.scrollViews.otherElements
+        let textField = elementsQuery.children(matching: .textField).element(boundBy: 0)
+        textField.tap()
+        textField.typeText("Lusso")
+        app.buttons["Next:"].tap()
+        
+        let textField2 = elementsQuery.children(matching: .textField).element(boundBy: 1)
+        textField2.typeText("Ferrari")
+        
+        let textField3 = app.scrollViews.otherElements.children(matching: .textField).element(boundBy: 3)
+        textField3.tap()
+        app.keys["2"].tap()
+        app.keys["0"].tap()
+        app.keys["1"].tap()
+        app.keys["6"].tap()
+        
+        app.buttons["Save"].tap()
+        
+        let alertTitle = app.staticTexts["EMPTY FIELDS!"]
+        XCTAssert(alertTitle.exists)
+        let alertText = app.staticTexts["You need to provide data in all fields in order to continue."]
+        XCTAssert(alertText.exists)
+        app.buttons["Okay"].tap()
     }
     
 }
