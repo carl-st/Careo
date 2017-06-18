@@ -9,7 +9,7 @@
 import UIKit
 
 class CarDetailsViewController: UIViewController {
-    
+
     @IBOutlet private var nameLabel: UILabel!
     @IBOutlet private var brandLabel: UILabel!
     @IBOutlet private var modelLabel: UILabel!
@@ -20,9 +20,9 @@ class CarDetailsViewController: UIViewController {
         super.viewDidLoad()
         if let viewModel = viewModel {
             nameLabel.text = viewModel.nameText
-            brandLabel.text = "Brand: \(viewModel.brandText)"
-            modelLabel.text = "Model: \(viewModel.modelText)"
-            yearLabel.text = "Year: \(viewModel.yearText)"
+            brandLabel.text = viewModel.brandText
+            modelLabel.text = viewModel.modelText
+            yearLabel.text = viewModel.yearText
         }
     }
 

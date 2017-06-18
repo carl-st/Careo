@@ -16,16 +16,17 @@ import RxCocoa
 class CarsServices: Service {
     
     let bag = DisposeBag()
+//    var request: () -> ()?
     
     static let sharedInstance = CarsServices()
 
     func getCars() {
-        requestJSON(.get, Urls.baseUrl + "cars", parameters: nil, headers: headers)
+         requestJSON(.get, Urls.baseUrl + "cars", parameters: nil, headers: headers)
             .mapArray(type: Car.self)
             .subscribe(onNext: {
                 cars in
                 print(cars)
-                PersistenceManager.sharedInstance.createOrUpdateAndRemoveDeleted(cars)
+                self.persistenceManager.createOrUpdateAndRemoveDeleted(cars)
             }, onError: {
                 error in
                 print(error)
@@ -44,7 +45,7 @@ class CarsServices: Service {
             .subscribe(onNext: {
                 car in
                 print(car)
-                PersistenceManager.sharedInstance.createOrUpdate(car)
+                self.persistenceManager.createOrUpdate(car)
                 completion()
             }, onError: {
                 error in

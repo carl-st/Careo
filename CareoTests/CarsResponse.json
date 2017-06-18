@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "59450b331d376f5800000068",
+    "name": "Berlinetta",
+    "model": "F12",
+    "brand": "Ferrari",
+    "year": "2012"
+  },
+  {
+    "_id": "594658181d376f58000000eb",
+    "name": "LaFerrari",
+    "model": "F70",
+    "brand": "Ferrari",
+    "year": "2013"
+  },
+  {
+    "_id": "594509e31d376f5800000067",
+    "name": "Superfast",
+    "model": "812",
+    "brand": "Ferrari",
+    "year": "2017"
+  },
+  {
+    "_id": "59450cba1d376f5800000069",
+    "name": "Lusso",
+    "model": "GTC4",
+    "brand": "Ferrari",
+    "year": "2016"
+  }
+]

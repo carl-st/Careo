@@ -5,7 +5,7 @@ target 'Careo' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Regease
+  # Pods for Careo
   pod 'Realm', :git => 'https://github.com/realm/realm-cocoa.git', :branch => 'master', submodules: true
   pod 'RealmSwift', :git => 'https://github.com/realm/realm-cocoa.git', :branch => 'master', submodules: true
   pod 'Alamofire', '~> 4.0'
@@ -17,13 +17,18 @@ target 'Careo' do
   pod 'RxCocoa'
   pod 'RxRealm'
   pod 'RxAlamofire'
-  pod "RxRealmDataSources"
+  pod 'RxRealmDataSources'
   pod 'SIAlertView'
   pod 'NVActivityIndicatorView'
 
   target 'CareoTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'OHHTTPStubs'
+    pod 'OHHTTPStubs/Swift'
+    pod 'RxSwift'
+    pod 'RxRealm'
+    pod 'AlamofireObjectMapper', '~> 4.0'
   end
 
   target 'CareoUITests' do

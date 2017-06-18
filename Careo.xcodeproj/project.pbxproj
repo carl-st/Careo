@@ -17,9 +17,12 @@
 		F9950E161EF1531600B29426 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E151EF1531600B29426 /* CarListViewController.swift */; };
 		F9950E1B1EF1531600B29426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9950E1A1EF1531600B29426 /* Assets.xcassets */; };
 		F9950E1E1EF1531600B29426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9950E1C1EF1531600B29426 /* LaunchScreen.storyboard */; };
-		F9950E291EF1531700B29426 /* CareoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E281EF1531700B29426 /* CareoTests.swift */; };
+		F9950E291EF1531700B29426 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E281EF1531700B29426 /* ModelTests.swift */; };
 		F9950E341EF1531700B29426 /* CareoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9950E331EF1531700B29426 /* CareoUITests.swift */; };
 		F9A47F781EF67B32004E5271 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A47F771EF67B32004E5271 /* AlertView.swift */; };
+		F9A47F7A1EF69238004E5271 /* CarDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A47F791EF69238004E5271 /* CarDetailsViewModelTests.swift */; };
+		F9A47F7C1EF695CF004E5271 /* CarsResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = F9A47F7B1EF695CF004E5271 /* CarsResponse.json */; };
+		F9A47F7E1EF69621004E5271 /* CarsServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A47F7D1EF69621004E5271 /* CarsServicesTests.swift */; };
 		F9B446311EF5486600A6AEDF /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B446301EF5486600A6AEDF /* CarDetailsViewController.swift */; };
 		F9B446331EF549A700A6AEDF /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B446321EF549A700A6AEDF /* Appearance.swift */; };
 		F9B446351EF551AC00A6AEDF /* CarDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B446341EF551AC00A6AEDF /* CarDetailsViewModel.swift */; };
@@ -73,12 +76,15 @@
 		F9950E1D1EF1531600B29426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9950E1F1EF1531600B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9950E241EF1531700B29426 /* CareoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9950E281EF1531700B29426 /* CareoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareoTests.swift; sourceTree = "<group>"; };
+		F9950E281EF1531700B29426 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		F9950E2A1EF1531700B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9950E2F1EF1531700B29426 /* CareoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9950E331EF1531700B29426 /* CareoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareoUITests.swift; sourceTree = "<group>"; };
 		F9950E351EF1531700B29426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9A47F771EF67B32004E5271 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = Other/AlertView.swift; sourceTree = "<group>"; };
+		F9A47F791EF69238004E5271 /* CarDetailsViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		F9A47F7B1EF695CF004E5271 /* CarsResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarsResponse.json; sourceTree = "<group>"; };
+		F9A47F7D1EF69621004E5271 /* CarsServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsServicesTests.swift; sourceTree = "<group>"; };
 		F9B446301EF5486600A6AEDF /* CarDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarDetailsViewController.swift; path = CarDetails/ViewControllers/CarDetailsViewController.swift; sourceTree = "<group>"; };
 		F9B446321EF549A700A6AEDF /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appearance.swift; path = Other/Appearance.swift; sourceTree = "<group>"; };
 		F9B446341EF551AC00A6AEDF /* CarDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarDetailsViewModel.swift; path = CarDetails/ViewModel/CarDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -191,8 +197,11 @@
 		F9950E271EF1531700B29426 /* CareoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F9950E281EF1531700B29426 /* CareoTests.swift */,
+				F9950E281EF1531700B29426 /* ModelTests.swift */,
+				F9A47F791EF69238004E5271 /* CarDetailsViewModelTests.swift */,
+				F9A47F7D1EF69621004E5271 /* CarsServicesTests.swift */,
 				F9950E2A1EF1531700B29426 /* Info.plist */,
+				F9A47F7B1EF695CF004E5271 /* CarsResponse.json */,
 			);
 			path = CareoTests;
 			sourceTree = "<group>";
@@ -473,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A47F7C1EF695CF004E5271 /* CarsResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +675,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9950E291EF1531700B29426 /* CareoTests.swift in Sources */,
+				F9A47F7E1EF69621004E5271 /* CarsServicesTests.swift in Sources */,
+				F9950E291EF1531700B29426 /* ModelTests.swift in Sources */,
+				F9A47F7A1EF69238004E5271 /* CarDetailsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

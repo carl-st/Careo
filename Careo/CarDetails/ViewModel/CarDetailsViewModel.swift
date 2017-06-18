@@ -9,7 +9,7 @@
 import Foundation
 
 class CarDetailsViewModel {
-    
+
     var car: Car?
     var nameText = ""
     var brandText = ""
@@ -20,9 +20,9 @@ class CarDetailsViewModel {
         self.init()
         self.car = car
         nameText = car.name
-        brandText = car.brand
-        modelText = car.model
-        yearText = car.year
+        brandText = "Brand: \(car.brand)"
+        modelText = "Model: \(car.model)"
+        yearText = "Year: \(car.year)"
     }
-    
+
 }

@@ -11,7 +11,8 @@ import RealmSwift
 import AlamofireObjectMapper
 
 class Service {
-    var persistanceManager = PersistenceManager.sharedInstance
+    
+    var persistenceManager = PersistenceManager.sharedInstance
     var headers: [String: String] = [:]
     
     init() {

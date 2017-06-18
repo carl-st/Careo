@@ -14,12 +14,12 @@ class CarListTableViewCell: UITableViewCell {
     @IBOutlet private var brandLabel: UILabel!
     @IBOutlet private var modelLabel: UILabel!
     @IBOutlet private var yearLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
-    func config(withCar car: Car){
+
+    func config(withCar car: Car) {
         nameLabel.text = "\(car.name)"
         modelLabel.text = "\(car.model)"
     }

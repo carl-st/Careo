@@ -9,7 +9,7 @@
 import UIKit
 
 extension AppDelegate {
-    
+
     func applyAppearance() {
         UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont(name: "GillSans-SemiBold", size: 20.0)!,
                                                             NSForegroundColorAttributeName: UIColor.white]

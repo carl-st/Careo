@@ -9,6 +9,21 @@ PODS:
     - ObjectMapper (~> 2.0)
   - NVActivityIndicatorView (3.6.1)
   - ObjectMapper (2.2.7)
+  - OHHTTPStubs (6.0.0):
+    - OHHTTPStubs/Default (= 6.0.0)
+  - OHHTTPStubs/Core (6.0.0)
+  - OHHTTPStubs/Default (6.0.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.0.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.0.0)
+  - OHHTTPStubs/Swift (6.0.0):
+    - OHHTTPStubs/Default
   - Realm (2.8.1):
     - Realm/Headers (= 2.8.1)
   - Realm/Headers (2.8.1)
@@ -39,6 +54,8 @@ DEPENDENCIES:
   - AlamofireNetworkActivityIndicator (~> 2.0)
   - AlamofireObjectMapper (~> 4.0)
   - NVActivityIndicatorView
+  - OHHTTPStubs
+  - OHHTTPStubs/Swift
   - Realm (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
   - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `master`)
   - RxAlamofire
@@ -76,6 +93,7 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
   Realm: 2627602ad6818451f0cb8c2a6e072f7f10a5f360
   RealmSwift: c2b6404151219e3ec30aba4efbcfa8f05ff95c77
   RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
@@ -86,6 +104,6 @@ SPEC CHECKSUMS:
   SIAlertView: 20c794b55eaf44d888773ea51647cf8907723919
   TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
 
-PODFILE CHECKSUM: dcfa3544e0848b2a0e44f59a940ec4fa2e333374
+PODFILE CHECKSUM: 75485a49f713299c7ad21d69d395a47b4bb5bc69
 
 COCOAPODS: 1.2.0

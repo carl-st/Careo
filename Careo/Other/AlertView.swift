@@ -10,7 +10,7 @@ import SIAlertView
 import UIKit
 
 class AlertView: SIAlertView {
-    
+
     override init(title: String!, andMessage message: String!) {
         super.init(title: title.uppercased(), andMessage: message)
         buttonColor = Colors.primary
@@ -21,19 +21,19 @@ class AlertView: SIAlertView {
         messageFont = UIFont(name: "GillSans-Light", size: 15.0)
         titleFont = UIFont(name: "GillSans-Light", size: 18.0)
         titleColor = Colors.primary
-        
+
         messageColor = Colors.primary
         transitionStyle = .fade
     }
-    
+
     convenience init(title: String!, message: String, cancelButtonTitle: String) {
         self.init(title: title.uppercased(), andMessage: message)
         addButton(withTitle: cancelButtonTitle, type: .default, handler: {
             (SIAlertViewHandler) -> Void in
-            
+
         })
     }
-    
+
     convenience init(title: String!, message: String, actionButtonTitle: String, cancelButtonTitle: String, actionCompletion: @escaping () -> Void, cancelCompletion: @escaping () -> Void) {
         self.init(title: title.uppercased(), andMessage: message)
         self.title = title
@@ -49,13 +49,13 @@ class AlertView: SIAlertView {
 
         buttonsListStyle = .normal
     }
-    
+
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
+
 }

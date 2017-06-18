@@ -10,13 +10,13 @@ import RealmSwift
 import ObjectMapper
 
 class Car: Object, Mappable {
-    
+
     dynamic var id = ""
     dynamic var name = ""
     dynamic var model = ""
     dynamic var brand = ""
     dynamic var year = ""
-    
+
     convenience init(name: String, model: String, brand: String, year: String) {
         self.init()
         self.name = name
@@ -24,15 +24,15 @@ class Car: Object, Mappable {
         self.brand = brand
         self.year = year
     }
-    
+
     override static func primaryKey() -> String? {
         return "id"
     }
-    
+
     required convenience init?(map: Map) {
         self.init()
     }
-    
+
     func mapping(map: Map) {
         if map.mappingType == .fromJSON {
             id <- map["_id"]
@@ -42,5 +42,5 @@ class Car: Object, Mappable {
         brand <- map["brand"]
         year <- map["year"]
     }
-    
+
 }
